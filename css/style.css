@@ -42,11 +42,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .button {
   font: inherit;
 
@@ -365,6 +360,10 @@ ul {
   background-color: #e5e5e5;
 }
 
+.product-info {
+  width: 390px;
+}
+
 .product-info h3 {
   font-size: 24px;
   line-height: 30px;
@@ -480,6 +479,10 @@ body {
   margin-bottom: 35px;
 }
 
+.product-photos {
+  width: 460px;
+}
+
 .news {
   width: 380px;
 }
@@ -514,7 +517,7 @@ body {
 }
 
 .filters {
-  width: 180px;
+  width: 220px;
 }
 
 .catalog {
@@ -579,7 +582,7 @@ body {
 
 /* прятать заголовки */
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -588,4 +591,4 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
