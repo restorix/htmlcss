@@ -2,9 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Магазин</title>
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-navigation-logo" href="index.html">
@@ -38,18 +44,18 @@
         </p>
         <ul class="product-photo-prewiev">
           <li>
-            <img src="img/product-small-1" width="140" height="149" alt="Фото анфас">
+            <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото анфас">
           </li>
         <li>
-          <img src="img/product-small-2" width="140" height="149" alt="Фото профиль">
+          <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото профиль">
         </li>
         <li>
-          <img src="img/product-small-3" width="140" height="149" alt="Фото отдельной части">
+          <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
         </li>
       </section>
       <!-- Информация о товаре -->
       <section class="product-info">
-        <h2 class="visual-hidden">Описание товара</h2>
+        <h2 class="visually-hidden">Описание товара</h2>
         <p class="product-availability">Есть в наличии</p>
         <p class="product-article">Артикул: DEXTER-AE</p>
         <p class="product-description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
@@ -91,8 +97,27 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль</p>
-      <!-- Тут будет форма входа -->
-      <span class="modal-close">X</span>
+      <!-- форма входа -->
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label for="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Забыли пароль</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>  
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>  
